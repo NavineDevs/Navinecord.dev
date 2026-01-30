@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navinecord</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Navinecord is the cutest Discord client mod">
+<meta name="author" content="Navinecord Contributors">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Navinecord">
+<meta property="og:description" content="Navinecord is the cutest Discord client mod">
+<meta property="og:image" content="/assets/navinecord-logo.png">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+<style>
+:root {
+  --bg:#0b0b12;
+  --bg-card:#171725;
+  --fg:#eaeaf0;
+  --accent:#a855f7;
+  --accent-hover:#9333ea;
+  --radius:14px;
+}
+
+* {
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body {
+  margin:0;
+  background:radial-gradient(circle at top,#14143a,var(--bg));
+  color:var(--fg);
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:#0a0a12;
+  border-bottom:1px solid #222;
+}
+
+.nav-left {
+  display:flex;
+  align-items:center;
+  gap:0.8rem;
+}
+
+.logo {
+  height:42px;
+  filter:drop-shadow(0 0 14px rgba(168,85,247,0.7));
+}
+
+nav ul {
+  display:flex;
+  list-style:none;
+  gap:1.2rem;
+  padding:0;
+  margin:0;
+}
+
+nav li a {
+  opacity:0.85;
+  font-weight:500;
+}
+
+nav li a:hover {
+  opacity:1;
+}
+
+header {
+  text-align:center;
+  padding:5rem 1rem 3rem;
+}
+
+.hero-logo {
+  width:220px;
+  margin-bottom:1.5rem;
+  filter:drop-shadow(0 0 24px rgba(147,51,234,0.8));
+}
+
+header h1 {
+  font-size:2.8rem;
+  margin:0.3rem 0;
+  color:var(--accent);
+}
+
+header p {
+  font-size:1.1rem;
+  opacity:0.8;
+}
+
+.buttons {
+  margin-top:2rem;
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.btn {
+  padding:0.9rem 2.2rem;
+  border-radius:var(--radius);
+  background:var(--bg-card);
+  border:2px solid #2a2a3a;
+  font-weight:600;
+  transition:0.2s;
+}
+
+.btn.primary {
+  background:var(--accent);
+  color:#0b0617;
+  border:none;
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+  background:var(--accent-hover);
+  color:#0b0617;
+}
+
+.features {
+  max-width:1100px;
+  margin:3rem auto;
+  padding:0 1rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.2rem;
+}
+
+.feature {
+  background:var(--bg-card);
+  padding:1.6rem;
+  border-radius:var(--radius);
+  border:1px solid #2a2a3a;
+}
+
+.feature h3 {
+  margin:0 0 0.5rem;
+  color:var(--accent);
+}
+
+.feature p {
+  margin:0;
+  font-size:0.95rem;
+  opacity:0.8;
+}
+
+footer {
+  text-align:center;
+  padding:2rem 1rem;
+  border-top:1px solid #222;
+  opacity:0.6;
+  font-size:0.85rem;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-left">
+    <img src="/assets/navinecord-logo.png" alt="Navinecord" class="logo">
+  </div>
+  <ul>
+    <li><a href="/download/windows">Windows</a></li>
+    <li><a href="https://chrome.google.com/webstore">Chrome Extension</a></li>
+  </ul>
+</nav>
+
+<header>
+  <img src="/assets/navinecord-logo.png" alt="Navinecord Logo" class="hero-logo">
+  <h1>Navinecord</h1>
+  <p>The Best Discord client mod</p>
+
+  <div class="buttons">
+    <a href="/download/windows" class="btn primary">Download for Windows</a>
+    <a href="https://chrome.google.com/webstore" class="btn">Chrome Extension</a>
+  </div>
+</header>
+
+<section class="features">
+  <div class="feature">
+    <h3>Easy Install</h3>
+    <p>Simple Windows installer and one-click Chrome extension.</p>
+  </div>
+
+  <div class="feature">
+    <h3>User Friendly</h3>
+    <p>Everything works out of the box with minimal setup.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Privacy Focused</h3>
+    <p>Blocks tracking and unnecessary background requests.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Actively Maintained</h3>
+    <p>Frequent updates and fast bug fixes.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Developer Friendly</h3>
+    <p>Flexible plugin system with powerful APIs.</p>
+  </div>
+
+  <div class="feature">
+    <h3>Browser Support</h3>
+    <p>Runs smoothly as a Chrome extension.</p>
+  </div>
+</section>
+
+<footer>
+  Discord is a trademark of Discord Inc. Navinecord is not affiliated with or endorsed by Discord Inc.
+</footer>
+
+</body>
+</html>
